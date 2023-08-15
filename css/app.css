@@ -1,0 +1,84 @@
+/* @import url("https://fonts.googleapis.com/css?family=Rubik:i,300,400,500,700"); */
+/* dintr-un motiv dubios fontul merge doar daca e pus pe prima linie din css */
+
+/* reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* reset end */
+
+/* style guide */
+
+:root {
+  --accent1: #ffb900;
+  --accent2: #5d458c;
+  --main: #2d1b50;
+  --white: #fff;
+
+  --body-copy-size: 18px;
+  --body-line-height: 22px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1188px;
+  margin: 0 auto;
+}
+
+/* headings */
+.heading {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.sub-heading {
+  font-weight: 500;
+  color: var(--accent1);
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.card {
+  border: 1px solid var(--accent2);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* generic style-guide layout */
+.sg .header {
+  margin: 36px 0;
+}
+
+.sg .content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.sg .grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+}
+/* generic style-guide layout end */
+
+/* style guide end */
+
+/* general */
+body {
+  background: var(--main);
+  font-family: "Rubik";
+  color: var(--white);
+  font-size: var(--body-copy-size);
+  line-height: var(--body-line-height);
+}
+
+/* general end */
